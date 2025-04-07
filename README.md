@@ -72,9 +72,7 @@ The script generates a visualization and saves it as `graph_visualization.png` i
 
 Here's what a visualization might look like:
 
-```
-[Placeholder for screenshot of visualization]
-```
+![Graph Visualization Example](graph_visualization.png)
 
 ## Customization
 
