@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {"id": "1001", "name": "Central Corp", "type": "Account", "isCentral": true},
+    {"id": "1002", "name": "Tech Solutions Inc.", "type": "Account", "level": 1},
+    {"id": "1003", "name": "Data Systems Ltd", "type": "Account", "level": 1},
+    {"id": "1004", "name": "Innovative Research", "type": "Account", "level": 1},
+    {"id": "1005", "name": "Global Partners", "type": "Account", "level": 1},
+    {"id": "1006", "name": "Future Labs", "type": "Account", "level": 1},
+    {"id": "1007", "name": "Strategic Ventures", "type": "Account", "level": 1},
+    {"id": "2001", "name": "John Smith", "type": "Contact", "level": 2},
+    {"id": "2002", "name": "Maria Garcia", "type": "Contact", "level": 2},
+    {"id": "2003", "name": "Robert Johnson", "type": "Contact", "level": 2},
+    {"id": "2004", "name": "Lisa Wong", "type": "Contact", "level": 2}
+  ],
+  "edges": [
+    {"source": "1001", "target": "1002", "type": "Account_Account", "relationship": "Investor"},
+    {"source": "1001", "target": "1003", "type": "Account_Account", "relationship": "Investor"},
+    {"source": "1001", "target": "1004", "type": "Account_Account", "relationship": "Investor"},
+    {"source": "1001", "target": "1005", "type": "Account_Account", "relationship": "Partner"},
+    {"source": "1001", "target": "1006", "type": "Account_Account", "relationship": "Investor"},
+    {"source": "1001", "target": "1007", "type": "Account_Account", "relationship": "Partner"},
+    {"source": "1002", "target": "2001", "type": "Account_Contact", "relationship": "Employee"},
+    {"source": "1003", "target": "2002", "type": "Account_Contact", "relationship": "Employee"},
+    {"source": "1004", "target": "2003", "type": "Account_Contact", "relationship": "Consultant"},
+    {"source": "1006", "target": "2004", "type": "Account_Contact", "relationship": "Director"}
+  ],
+  "summary": "Example graph with 11 nodes and 10 edges showing a corporate relationship structure"
+}
